@@ -56,7 +56,8 @@ ROOT_URLCONF = 'homeandcakes.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["D:\104_PYTHON\homeandcakes\templates"],
+        #'DIRS': ["D:\104_PYTHON\homeandcakes\templates"],
+        'DIRS': [os.path.join(BASE_DIR, 'templates\\')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
